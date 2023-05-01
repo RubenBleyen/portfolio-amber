@@ -1,0 +1,48 @@
+import {
+  HStack,
+  Image,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  Box,
+  Button,
+  ButtonGroup,
+  Container,
+  Flex,
+  IconButton,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import logo from "../assets/logo.webp";
+import { FiMenu } from 'react-icons/fi'
+
+const NavBar = () => {
+    const isDesktop = useBreakpointValue({ base: false, lg: true })
+    return (
+      <Box as="section" pb={{ base: '12', md: '24' }}>
+        <Box as="nav" bg="bg-surface" boxShadow="md">
+          <Container py={{ base: '4', lg: '5' }}>
+            <HStack spacing="10" justify="space-between">
+            <Image src={logo} boxSize='60px'></Image>
+              {isDesktop ? (
+                <Flex justify="space-between" flex="1">
+                  <ButtonGroup variant="link" spacing="8">
+                    {['Home', 'Portfolio', 'About', 'Contact'].map((item) => (
+                      <Button key={item}>{item}</Button>
+                    ))}
+                  </ButtonGroup>
+                </Flex>
+              ) : (
+                <IconButton
+                  variant="ghost"
+                  icon={<FiMenu fontSize="1.25rem" />}
+                  aria-label="Open Menu"
+                />
+              )}
+            </HStack>
+          </Container>
+        </Box>
+      </Box>
+  );
+};
+export default NavBar;
