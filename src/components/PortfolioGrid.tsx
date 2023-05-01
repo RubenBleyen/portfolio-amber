@@ -9,7 +9,7 @@ const PortfolioGrid = () => {
     {error && <Text>{error}</Text>}
     <Heading size={'3xl'} marginBottom={5}>Portfolio</Heading>
     <SimpleGrid spacing={4}
-      templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
+      templateColumns='repeat(auto-fill, minmax(250px, 1fr))'
       >
     {data.map((portfolio) => (
         <PortfolioCard key={portfolio.id} portfolio={portfolio}></PortfolioCard>
