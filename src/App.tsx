@@ -16,7 +16,6 @@ function App() {
         base: "1fr",
         lg: "1fr",
       }}
-
     >
       <GridItem area="nav"><NavBar/>
       </GridItem>

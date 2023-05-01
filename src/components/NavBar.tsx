@@ -1,14 +1,11 @@
 import {
   HStack,
   Image,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
+  Heading,
   Box,
   Button,
   ButtonGroup,
-  Container,
+  Center,
   Flex,
   IconButton,
   useBreakpointValue,
@@ -19,13 +16,13 @@ import { FiMenu } from 'react-icons/fi'
 const NavBar = () => {
     const isDesktop = useBreakpointValue({ base: false, lg: true })
     return (
-      <Box as="section" pb={{ base: '12', md: '24' }}>
-        <Box as="nav" bg="bg-surface" boxShadow="md">
-          <Container py={{ base: '4', lg: '5' }}>
+        <Box as="nav" padding={7} bg="bg-surface" boxShadow="md">
+          <Center>
             <HStack spacing="10" justify="space-between">
             <Image src={logo} boxSize='60px'></Image>
+            <Heading>Amber Jongsma</Heading>
               {isDesktop ? (
-                <Flex justify="space-between" flex="1">
+                <Flex float={'right'} justify="space-between" flex="1">
                   <ButtonGroup variant="link" spacing="8">
                     {['Home', 'Portfolio', 'About', 'Contact'].map((item) => (
                       <Button key={item}>{item}</Button>
@@ -40,9 +37,8 @@ const NavBar = () => {
                 />
               )}
             </HStack>
-          </Container>
+          </Center>
         </Box>
-      </Box>
   );
 };
 export default NavBar;

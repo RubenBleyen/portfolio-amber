@@ -1,42 +1,59 @@
 export default [
     {
       "id": 4,
-      "name": "Solenne Devos",
+      "name": "Collage, model: Solenne Devos",
       "image_background": "Solenne2.jpg",
     },
     {
       "id": 51,
-      "name": "Emergency Passport",
+      "name": "Travelbook: Emergency passport",
       "image_background": "ReisverhaalOpen.jpg",   
     },
     {
         "id": 4,
-        "name": "Solenne Devos",
-        "image_background": "Solenne2.jpg",
+        "name": "Fake news",
+        "image_background": "AJ_FNDeWitteRaaf.jpg",
       },
       {
         "id": 51,
-        "name": "Emergency Passport",
-        "image_background": "ReisverhaalOpen.jpg",   
+        "name": "Metropolis M: Post internet art",
+        "image_background": "MetropolisM.jpg",   
       },
       {
         "id": 4,
-        "name": "Solenne Devos",
-        "image_background": "Solenne2.jpg",
+        "name": "women through the eye of the churchs",
+        "image_background": "VrouwGezienDoorK.jpg",
       },
       {
         "id": 51,
-        "name": "Emergency Passport",
-        "image_background": "ReisverhaalOpen.jpg",   
+        "name": "Protest action against social media",
+        "image_background": "posterActie.jpg",   
       },
       {
         "id": 4,
-        "name": "Solenne Devos",
-        "image_background": "Solenne2.jpg",
+        "name": "Collage",
+        "image_background": "AJ_collageZwart.jpg",
       },
       {
         "id": 51,
-        "name": "Emergency Passport",
-        "image_background": "ReisverhaalOpen.jpg",   
+        "name": "Book cover: Jazz",
+        "image_background": "JazzBook.jpg",   
       },
+      {
+        "id": 51,
+        "name": "Poster: Let's have a haring with Keith (dropping chaos)",
+        "image_background": "KeithHaring_A4.jpg",   
+      },
+      {
+        "id": 51,
+        "name": "Collage, singer: Noemie Wolfs",
+        "image_background": "RJ_NW_AJ_DEF.jpg",   
+      },
+      {
+        "id": 51,
+        "name": "Wired Cover",
+        "image_background": "WiredCoverSquarekopie.jpg",   
+      },
+      
+      
 ]
