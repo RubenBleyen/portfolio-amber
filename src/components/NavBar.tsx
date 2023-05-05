@@ -10,7 +10,6 @@ import {
   IconButton,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import logo from "../assets/2022_AmberJongsma.png";
 import { FiMenu } from "react-icons/fi";
 
 const NavBar = () => {
@@ -18,7 +17,7 @@ const NavBar = () => {
   return (
     <Box as="nav" padding={7} bg="bg-surface" boxShadow="md">
         <Flex justify="space-between" marginLeft={10}  marginRight={10}>
-          <Image className="hover-grow" paddingBottom={2} objectFit="scale-down" src={logo} width="250px" ></Image>
+          <Image className="hover-grow" paddingBottom={2} objectFit="scale-down" src={"/2022_AmberJongsma.png"} width="250px" ></Image>
           {isDesktop ? (
             <Flex>
               <ButtonGroup float="right" variant="link" spacing="8">
