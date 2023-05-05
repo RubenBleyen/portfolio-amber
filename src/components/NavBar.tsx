@@ -18,7 +18,7 @@ const NavBar = () => {
   return (
     <Box as="nav" padding={7} bg="bg-surface" boxShadow="md">
         <Flex justify="space-between" marginLeft={10}  marginRight={10}>
-          <Image objectFit="scale-down" src={logo} width="250px" ></Image>
+          <Image className="hover-grow" paddingBottom={2} objectFit="scale-down" src={logo} width="250px" ></Image>
           {isDesktop ? (
             <Flex>
               <ButtonGroup float="right" variant="link" spacing="8">

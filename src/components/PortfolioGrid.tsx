@@ -7,7 +7,6 @@ const PortfolioGrid = () => {
   return (
     <>
     {error && <Text>{error}</Text>}
-    <Heading size={'xl'} marginBottom={5}>Portfolio</Heading>
     <SimpleGrid spacing={4}
       templateColumns='repeat(auto-fill, minmax(250px, 1fr))'
       >

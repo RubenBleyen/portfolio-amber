@@ -1,0 +1,10 @@
+.hover-grow:hover {
+    transform: scale(1.10);
+    transition-duration: 500ms;
+}
+
+img.hover-zoom:hover {
+    transform: scale(1.5);
+    transition-duration: 1000ms;
+    width: 100%;
+}
