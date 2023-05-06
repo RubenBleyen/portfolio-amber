@@ -8,7 +8,7 @@ const SlideShow = () => {
     <Box display={"flex"} minWidth={100} maxWidth={600}>
   <Carousel wrapAround={true} speed={3000} animation="fade" pauseOnHover={true} autoplay={true} autoplayInterval={5000}>
   {data.map((portfolio) => (
-        <img key={portfolio.id} src={portfolio.image_background}></img>
+        <img height={"100vh"} key={portfolio.id} src={portfolio.image_background}></img>
     ))}
    </Carousel>
     </Box>

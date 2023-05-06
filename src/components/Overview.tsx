@@ -23,7 +23,7 @@ function App() {
       <GridItem area="nav">
         <NavBar />
       </GridItem>
-      <GridItem justifySelf={"center"} width="50%" marginTop={"25%"} area="info">
+      <GridItem hidden={myPortfolio.image_background == null} justifySelf={"center"} width="50%" marginTop={"25%"} area="info">
         <Info portfolio={myPortfolio}></Info>
       </GridItem>
       <GridItem justifySelf={"start"} width="80%" marginTop={"15%"} area="overview">
