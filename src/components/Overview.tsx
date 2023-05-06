@@ -11,21 +11,22 @@ function App() {
     <Grid
       padding={5}
       templateAreas={{
-        base: `"nav nav nav nav" "info overview overview overview"`,
-        lg: `"nav nav nav nav" "info overview overview overview"`,
+        base: `"nav" "overview"`,
+        lg: `"nav nav nav nav" "info info overview overview"`,
+
       }}
       templateColumns={{
-        base: "1fr 1fr 1fr 1fr",
+        base: "100% 100%",
         lg: "1fr 1fr 1fr 1fr ",
       }}
     >
       <GridItem area="nav">
         <NavBar />
       </GridItem>
-      <GridItem justifySelf={"end"} width="50%" marginTop={"50px"} area="info">
+      <GridItem justifySelf={"center"} width="50%" marginTop={"50px"} area="info">
         <Info portfolio={myPortfolio}></Info>
       </GridItem>
-      <GridItem width="50%" marginLeft={"10%"} marginTop={"50px"} area="overview">
+      <GridItem justifySelf={"center"} width="80%" marginTop={"50px"} area="overview">
         <PortfolioGrid
           selectedImage={myPortfolio}
           onSelectedImage={(portfolio) => SetMyPortfolio(portfolio)}
