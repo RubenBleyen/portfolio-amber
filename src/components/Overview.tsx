@@ -23,10 +23,10 @@ function App() {
       <GridItem area="nav">
         <NavBar />
       </GridItem>
-      <GridItem justifySelf={"center"} width="50%" marginTop={"50px"} area="info">
+      <GridItem justifySelf={"center"} width="50%" marginTop={"25%"} area="info">
         <Info portfolio={myPortfolio}></Info>
       </GridItem>
-      <GridItem justifySelf={"center"} width="80%" marginTop={"50px"} area="overview">
+      <GridItem justifySelf={"start"} width="80%" marginTop={"15%"} area="overview">
         <PortfolioGrid
           selectedImage={myPortfolio}
           onSelectedImage={(portfolio) => SetMyPortfolio(portfolio)}
