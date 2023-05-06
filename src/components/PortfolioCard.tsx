@@ -3,13 +3,15 @@ import { Portfolio } from "./useCards";
 
 interface Props {
   portfolio: Portfolio;
+  
 }
 const PortfolioCard = ({ portfolio }: Props) => {
   return (
     <Card maxW="lg" maxH="lg" borderRadius={10} overflow={"hidden"}>
       <Image
         className="hover-zoom"
-        height={350}
+        width={"100%"}
+        height={"100%"}
         objectFit="cover"
         src={`/${portfolio.image_background}`}
       ></Image>

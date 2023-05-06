@@ -1,21 +1,33 @@
-import {Text, SimpleGrid, Heading} from '@chakra-ui/react'
-import PortfolioCard from './PortfolioCard'
-import { useCards } from './useCards'
+import { Text, SimpleGrid, Box, Flex } from "@chakra-ui/react";
+import PortfolioCard from "./PortfolioCard";
+import { Portfolio, useCards } from "./useCards";
 
-const PortfolioGrid = () => {
-    const {data, isLoading, error} = useCards()
-  return (
-    <>
-    {error && <Text>{error}</Text>}
-    <SimpleGrid spacing={4}
-      templateColumns='repeat(auto-fill, minmax(250px, 1fr))'
-      >
-    {data.map((portfolio) => (
-        <PortfolioCard key={portfolio.id} portfolio={portfolio}></PortfolioCard>
-    ))}
-    </SimpleGrid>
-    </>
-  )
+interface Props {
+  onSelectedImage: (image: Portfolio) => void;
+  selectedImage: Portfolio | null;
 }
 
-export default PortfolioGrid
+const PortfolioGrid = ({ onSelectedImage, selectedImage }: Props) => {
+  const { data, isLoading, error } = useCards();
+  return (
+    <>
+      {error && <Text>{error}</Text>}
+      <SimpleGrid
+        justifyContent="center"
+        spacing={5}
+        templateColumns="repeat(auto-fill, minmax(125px, 1fr))"
+      >
+        {data.map((portfolio) => (
+          <Flex onClick={() => onSelectedImage(portfolio)}>
+            <PortfolioCard
+              key={portfolio.id}
+              portfolio={portfolio}
+            ></PortfolioCard>
+          </Flex>
+        ))}
+      </SimpleGrid>
+    </>
+  );
+};
+
+export default PortfolioGrid;

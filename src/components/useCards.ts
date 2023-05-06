@@ -4,6 +4,8 @@ export interface Portfolio{
     id: number
     name: string
     image_background: string
+    titel: string
+    info: string
 }
 
 export
