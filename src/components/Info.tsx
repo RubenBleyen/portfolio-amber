@@ -7,7 +7,7 @@ interface Props {
 const Info = ({portfolio}: Props) => {
   return (
     <div>
-    <Image src={`/${portfolio.image_background}`}>
+    <Image objectFit="cover" height={"60vh"} src={`/${portfolio.image_background}`}>
     </Image>
     <p>{portfolio.titel}</p>
     </div>
