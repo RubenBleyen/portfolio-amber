@@ -32,7 +32,7 @@ const NavBar = () => {
           paddingRight={5}
           objectFit="scale-down"
           src={"/2022_AmberJongsma.png"}
-          width="250px"
+          width="350px"
         ></Image>
         {isDesktop ? (
           <Flex>

@@ -5,7 +5,7 @@ import { Portfolio, useCards } from "./useCards";
 const SlideShow = () => {
   const {data, isLoading, error} = useCards()
   return (
-    <Box display={"flex"} minWidth={100} maxWidth={600}>
+    <Box display={"flex"} minWidth={100} maxWidth={825}>
   <Carousel wrapAround={true} speed={3000} animation="fade" pauseOnHover={true} autoplay={true} autoplayInterval={5000}>
   {data.map((portfolio) => (
         <img height={"100vh"} key={portfolio.id} src={portfolio.image_background}></img>
