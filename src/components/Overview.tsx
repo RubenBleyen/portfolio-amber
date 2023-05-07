@@ -26,7 +26,7 @@ function App() {
       <GridItem hidden={myPortfolio.image_background == null} justifySelf={"center"} width="50%" marginTop={"25%"} area="info">
         <Info portfolio={myPortfolio}></Info>
       </GridItem>
-      <GridItem justifySelf={"start"} width="80%" marginTop={"15%"} area="overview">
+      <GridItem justifySelf={"center"} width="80%" marginTop={"15%"} area="overview">
         <PortfolioGrid
           selectedImage={myPortfolio}
           onSelectedImage={(portfolio) => SetMyPortfolio(portfolio)}

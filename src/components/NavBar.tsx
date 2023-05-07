@@ -23,7 +23,7 @@ const NavBar = () => {
     navigate("/overview");
   };
   return (
-    <Box as="nav" bg="bg-surface" boxShadow="md" padding={6}>
+    <Box as="nav" bg="bg-surface" padding={6}>
       <Flex justify="space-between">
         <Image
           onClick={handleLogoClick}
