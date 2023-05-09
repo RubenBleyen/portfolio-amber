@@ -11,15 +11,13 @@ function App() {
     <Grid
       padding={5}
       templateAreas={{
-        base: `"nav" "overview"`,
-        sm: `"nav" "info" "overview"`,
+        base: `"nav" "info" "overview"`,
         md: `"nav nav nav" "info overview overview"`,
         lg: `"nav nav nav nav" "info info overview overview"`,
 
       }}
       templateColumns={{
-        base: "100% 100%",
-        sm: "1fr",
+        base: "1fr",
         md: "1fr 1fr 1fr ",
         lg: "1fr 1fr 1fr 1fr ",
       }}
@@ -27,7 +25,7 @@ function App() {
       <GridItem area="nav">
         <NavBar />
       </GridItem>
-      <GridItem hidden={myPortfolio.image_background == null} justifySelf={"center"} width="48vh" marginTop={"15vh"} area="info">
+      <GridItem hidden={myPortfolio.image_background == null} justifySelf={"center"} width="50%" marginTop={"15vh"} area="info">
         <Info portfolio={myPortfolio}></Info>
       </GridItem>
       <GridItem justifySelf={"center"} width="80%" marginTop={"10vh"} area="overview">
