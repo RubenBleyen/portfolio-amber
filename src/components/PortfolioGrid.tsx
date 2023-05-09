@@ -14,8 +14,8 @@ const PortfolioGrid = ({ onSelectedImage, selectedImage }: Props) => {
       {error && <Text>{error}</Text>}
       <SimpleGrid
         justifyContent="center"
-        spacing={5}
-        templateColumns="repeat(auto-fill, minmax(8vw, 1fr))"
+        spacing={3}
+        templateColumns="repeat(auto-fill, minmax(20%, 1fr))"
       >
         {data.map((portfolio) => (
           <Flex onClick={() => onSelectedImage(portfolio)}>

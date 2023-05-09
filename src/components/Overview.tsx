@@ -12,12 +12,14 @@ function App() {
       padding={5}
       templateAreas={{
         base: `"nav" "overview"`,
-        md: `"nav nav nav nav" "info overview overview"`,
+        sm: `"nav" "info" "overview"`,
+        md: `"nav nav nav" "info overview overview"`,
         lg: `"nav nav nav nav" "info info overview overview"`,
 
       }}
       templateColumns={{
         base: "100% 100%",
+        sm: "1fr",
         md: "1fr 1fr 1fr ",
         lg: "1fr 1fr 1fr 1fr ",
       }}
