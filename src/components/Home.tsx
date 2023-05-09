@@ -18,7 +18,7 @@ function App() {
     >
       <GridItem area="nav"><NavBar/>
       </GridItem>
-      <GridItem justifySelf={"center"} marginTop={"4%"} area="main">
+      <GridItem justifySelf={"center"} marginTop={"2vh"} area="main">
         <Center>
           <SlideShow></SlideShow>
         </Center>
